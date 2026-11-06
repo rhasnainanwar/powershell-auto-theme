@@ -1,4 +1,4 @@
-# Terminal Auto Theme
+# PowerShell Auto Theme
 
 Automatically switch your Windows Terminal color scheme between a light theme during the day and a dark theme at night, based on the real sunrise and sunset times where you live. No restart needed: open terminal tabs change instantly.
 
@@ -21,14 +21,18 @@ No admin rights, internet access, or location services are needed. Sun times are
 
 ## Quick start
 
-1. **Download** this repository (Code → Download ZIP, or `git clone`) to a permanent folder, for example `C:\Tools\terminal-auto-theme`. The scheduled task runs the script from this folder, so don't delete it.
+1. **Download** this repository to a permanent folder, for example `C:\Tools\powershell-auto-theme`. The scheduled task runs the script from this folder, so don't delete it. Either use Code → Download ZIP, or:
+
+   ```powershell
+   git clone https://github.com/rhasnainanwar/powershell-auto-theme.git C:\Tools\powershell-auto-theme
+   ```
 
 2. **Find your coordinates.** Search "my latitude and longitude" or use [latlong.net](https://www.latlong.net). Use decimal degrees; south and west are negative (for example London is `51.5074`, `-0.1278`).
 
 3. **Install** from a PowerShell 7 window:
 
    ```powershell
-   cd C:\Tools\terminal-auto-theme
+   cd C:\Tools\powershell-auto-theme
    Get-ChildItem | Unblock-File
    .\TerminalAutoTheme.ps1 -Install -Latitude 51.5074 -Longitude -0.1278
    ```
