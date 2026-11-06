@@ -1,0 +1,4 @@
+# Per-user files created by the script
+config.json
+*.log
+settings.json.backup
